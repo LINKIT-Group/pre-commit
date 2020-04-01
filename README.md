@@ -72,5 +72,5 @@ repos:
     rev: <VERSION> # fill in the latest tag or master for bleeding edge
     hooks:
       - id: terraform-fmt
-        args: ["--setup-file test.tf"]
+        args: [--setup-file=test.tf]
 ```

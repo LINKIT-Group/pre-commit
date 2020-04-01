@@ -1,8 +1,8 @@
 #!/bin/bash
 
-while [[ $1 = --* ]]; do
-  case $1 in
-    --setup-file) setupFile="$2"; shift ;;
+for i in "$@"; do
+  case $i in
+    --setup-file=*) setupFile="${i#*=}"; echo $setupFile; exit; ;;
   esac
   shift
 done
