@@ -6,7 +6,7 @@ supported hooks are:
 * **terraform-fmt**: Automatically run `terraform fmt` on all Terraform code (`*.tf` files).
 * **terraform-validate**: Automatically run `terraform validate` on all Terraform code (`*.tf` files).
 * **tflint**: Automatically run [`tflint`](https://github.com/terraform-linters/tflint) on all Terraform code (`*.tf` files).
-* **terragrunt-hclfmt**: Automatically format all Terragrunt code (`*.hcl` files).
+* **terragrunt-fmt**: Automatically format all Terragrunt code (`*.hcl` files).
 
 Inspired by the corresponding [gruntwork.io](https://github.com/gruntwork-io/pre-commit) repository! For now it is tailored for the needs of the MLOps platform project,
 feel free to extend for general use!

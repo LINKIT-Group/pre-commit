@@ -26,3 +26,11 @@
   files: \.tf$
   exclude: \.+.terraform\/.*$
 
+- id: terragrunt-fmt
+  name: Terragrunt fmt
+  description: Rewrites all Terragrunt configuration files to a canonical format
+  entry: hooks/terragrunt-hclfmt.sh
+  language: script
+  files: \.hcl
+  exclude: \.+.terragrunt-cache\/.*$
+
