@@ -34,3 +34,9 @@
   files: \.hcl
   exclude: \.+.terragrunt-cache\/.*$
 
+- id: shellcheck
+  name: Shellcheck Bash Linter
+  description: Performs linting on bash scripts
+  entry: hooks/shellcheck.sh
+  language: script
+
