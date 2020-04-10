@@ -15,7 +15,7 @@ done
 for path_uniq in $(echo "${paths[*]}" | tr ' ' '\n' | sort -u); do
   path_uniq="${path_uniq//__REPLACED__SPACE__/ }"
 
-  if [[ -n "$(find $path_uniq -maxdepth 1 -name 'terragrunt.hcl' -print -quit)" ]]; then
+  if [[ -n "$(find $path_uniq -maxdepth 1 -name '*.hcl' -print -quit)" ]]; then
 
     starting_path=$(realpath "$path_uniq")
     terragrunt_path="$path_uniq"
