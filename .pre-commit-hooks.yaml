@@ -49,3 +49,10 @@
   entry: hooks/shellcheck.sh
   language: script
 
+- id: dockerfiles
+  name: Hadolint runner
+  description: Runs Hadolint fo check for Dockerfile best practices
+  entry: hadolint/hadolint hadolint
+  language: docker_image
+  files: Dockerfile.*$
+
